@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jackygas-nlp_jd287"
+version = "0.1.0"
+description = "从样本里推断NLP 算法工程师·标注一致性与标注者偏差应有的字段集合，逐字段检查存在性与类型，缺失项单独列出"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "jackygas" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://jackygas.github.io"
+Repository = "https://github.com/jackygas/nlp_jd287"
+Issues = "https://github.com/jackygas/nlp_jd287/issues"
+
+[project.scripts]
+nlp_jd287 = "nlp_jd287:main"
+
+[tool.setuptools]
+py-modules = ["nlp_jd287"]
